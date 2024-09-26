@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class Task {
     long id;
+    long execDuration;
 
     public Task(long id) {
         this.id = id;
@@ -15,5 +16,9 @@ public class Task {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public long getExecDuration() {
+        return execDuration;
     }
 }
